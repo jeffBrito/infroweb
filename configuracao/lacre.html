@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Tva Net Telecom - CEP</title>
+    <title>Tva Net Telecom - Lacre</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="../css/cep.css">
+    <link rel="stylesheet" href="../css/lacre.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -163,18 +163,18 @@
             
             <div class="container">
                 <div id="topoConteudo">
-                    <a id="novoCep" class="btn btn-primary" href="novoCEP.html" role="button"><p id="txtNovo">Novo CEP</p></a>
-                    <div id="lblCep">
-                        <h4 id="tituloCep">CEP</h4>
+                    <a id="novoLacre" class="btn btn-primary" href="novoLacre.html" role="button"><p id="txtNovo">Novo Lacre</p></a>
+                    <div id="lblLacre">
+                        <h4 id="tituloLacre">Lacre</h4>
                     </div>
                 </div>
-                <div id="frmConsultaCep">
+                <div id="frmConsultaLacre">
                     <div id="filtro">
                         <form action="">
                             <div class="row">
                                 <div id="cbPesquisaFiltro" class="col-md-2 col-xs-2">
                                     <div class="form-group">
-                                        <label id="txtFiltroPes" for="comboPesquisa">Tipo de Pesquisa</label>
+                                        <label id="txtFiltroPes" for="cbPesquisa">Tipo de Pesquisa</label>
                                         <select id="cbPesquisa" class="form-control">
                                             <option value="1">------</option>
                                             <option value="2">CEP</option>
@@ -183,13 +183,23 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div id="cbPesquisaFiltro" class="col-md-2 col-xs-2">
+                                <div id="cbPesquisaFiltro" class="col-md-3 col-xs-3">
                                     <div class="form-group">
                                         <label for="cbOrdem">Filtro</label>
                                         <select id="cbOrdem" class="form-control">
                                             <option value="1">------</option>
                                             <option value="2">Ordem Crescente</option>
                                             <option value="3">Ordem Descrecente</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="cbPesquisaFiltro" class="col-md-3 col-xs-3">
+                                    <div class="form-group">
+                                        <label for="cbCondicao">Condição do Lacre</label>
+                                        <select id="cbCondicao" class="form-control">
+                                            <option value="1">------</option>
+                                            <option value="2">Ativo</option>
+                                            <option value="3">Inativo</option>
                                         </select>
                                     </div>
                                 </div>
@@ -207,79 +217,88 @@
                                 </div>
                             </div>
                         </form>
-                        <div id="frmCep">
-                            <table id="cep" class="table">
+                        <div id="frmLacre">
+                            <table id="lacres" class="table">
                                 <thead class="thead-dark">
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">CEP</th>
-                                        <th scope="col">Logradouro</th>
-                                        <th scope="col">Endereço</th>
-                                        <th scope="col">Bairro</th>
+                                        <th scope="col">Lacre</th>
+                                        <th scope="col">Cor</th>
+                                        <th scope="col">Contrato</th>
+                                        <th scope="col">Node</th>
+                                        <th scope="col">Condição</th>
                                         <th scope="col">Ação</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>21361-132</td>
-                                        <td>Avenida</td>
-                                        <td>Av.Monsenhor Félix</td>
-                                        <td>Vaz Lobo</td>
+                                        <td>1511823</td>
+                                        <td>AZ</td>
+                                        <td>13005</td>
+                                        <td>Madureira</td>
+                                        <td>Ativo</td>
                                         <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>21361-132</td>
-                                        <td>Avenida</td>
-                                        <td>Av.Monsenhor Félix</td>
-                                        <td>Vaz Lobo</td>
+                                        <td>1511823</td>
+                                        <td>AZ</td>
+                                        <td>13005</td>
+                                        <td>Madureira</td>
+                                        <td>Ativo</td>
                                         <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>21361-132</td>
-                                        <td>Avenida</td>
-                                        <td>Av.Monsenhor Félix</td>
-                                        <td>Vaz Lobo</td>
+                                        <td>1511823</td>
+                                        <td>AZ</td>
+                                        <td>13005</td>
+                                        <td>Madureira</td>
+                                        <td>Ativo</td>
                                         <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>21361-132</td>
-                                        <td>Avenida</td>
-                                        <td>Av.Monsenhor Félix</td>
-                                        <td>Vaz Lobo</td>
+                                        <td>1511823</td>
+                                        <td>AZ</td>
+                                        <td>13005</td>
+                                        <td>Madureira</td>
+                                        <td>Ativo</td>
                                         <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>21361-132</td>
-                                        <td>Avenida</td>
-                                        <td>Av.Monsenhor Félix</td>
-                                        <td>Vaz Lobo</td>
+                                        <td>1511823</td>
+                                        <td>AZ</td>
+                                        <td>13005</td>
+                                        <td>Madureira</td>
+                                        <td>Ativo</td>
                                         <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>21361-132</td>
-                                        <td>Avenida</td>
-                                        <td>Av.Monsenhor Félix</td>
-                                        <td>Vaz Lobo</td>
+                                        <td>1511823</td>
+                                        <td>AZ</td>
+                                        <td>13005</td>
+                                        <td>Vicente de Carvalho</td>
+                                        <td>Ativo</td>
                                         <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
                                     </tr>
+
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>21361-132</td>
-                                        <td>Avenida</td>
-                                        <td>Av.Monsenhor Félix</td>
-                                        <td>Vaz Lobo</td>
+                                        <td>1511823</td>
+                                        <td>AZ</td>
+                                        <td>13005</td>
+                                        <td>Madureira</td>
+                                        <td>Ativo</td>
                                         <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div id="NumCep">
+                        <div id="NumLacre">
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination">
                                     <li class="page-item">
