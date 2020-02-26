@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Tva Net Telecom - Novo Usuario</title>
+    <title>Tva Net Telecom - Usuário Parâmetro</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="../css/novoCep.css">
+    <link rel="stylesheet" href="../css/usuarioParametro.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -175,81 +175,30 @@
                 </div>
                 <div id="topoConteudo">
                     <div id="lblCep">
-                        <h4 id="tituloCep">Novo Cep</h4>
+                        <h4 id="tituloCep">Usuário Parâmetro</h4>
                     </div>
                 </div>
                 <div id="frmCadCep">
                     <div id="frmCep">
                         <div class="row">
-                            <div class="col-md-2 col-xs-2">
-                                <div class="form-group">
-                                    <label for="txtCep">CEP *</label>
-                                    <input id="txtCep" class="form-control" type="text" name="txtCep" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" required>
-                                </div>
-                            </div>
-                            <div id="endereco" class="col-md-6 col-xs-6">
-                                <div class="form-group">
-                                    <label for="txtEndereco">Endereço *</label>
-                                    <input id="txtEndereco" class="form-control" type="text" name="txtEndereco" required>
-                                </div>
-                            </div>
-                            <div id="bairro" class="col-md-4 col-xs-4">
-                                <div class="form-group">
-                                    <label for="txtBairro">Bairro *</label>
-                                    <input id="txtBairro" class="form-control" type="text" name="txtBairro" required>
-                                </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-3">
+                            <div class="form-group">
+                                <button id="btnSalvar" type="submit" class=" form-control btn btn-success">Salvar</button>
                             </div>
                         </div>
-                        <div class="row">
-                            <div id="cidade" class="col-md-4 col-xs-4">
-                                <div class="form-group">
-                                    <label for="txtCidade">Cidade *</label>
-                                    <input id="txtCidade" class="form-control" type="text" name="txtCidade" required>
-                                </div>
-                            </div>
-                            <div id="uf" class="col-md-2 col-xs-2">
-                                <div class="form-group">
-                                    <label for="txtUf">UF *</label>
-                                    <input id="txtUf" class="form-control" type="text" name="txtUf" required>
-                                </div>
-                            </div>
-                            <div id="logradouro" class="col-md-6 col-xs-6">
-                                <div class="form-group">
-                                    <label for="cbLogradouro">Logradouro *</label>
-                                    <select class="form-control" required>
-                                        <option value="0">-------</option>
-                                        <option value="1">ALAMEDA</option>
-                                        <option value="2">AVENIDA</option>
-                                        <option value="3">BECO</option>
-                                        <option value="4">ESCADARIA</option>
-                                        <option value="5">ESTRADA</option>
-                                        <option value="6">LARGO</option>
-                                        <option value="7">PARQUE</option>
-                                        <option value="8">PRAÇA</option>
-                                        <option value="9">RODOVIA</option>
-                                        <option value="10">RAMPA</option>
-                                        <option value="11">RUA</option>
-                                        <option value="12">VIA</option>
-                                        <option value="13">VIELA</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3 col-xs-3">
-                                <div class="form-group">
-                                    <button id="btnSalvar" type="submit" class=" form-control btn btn-success">Salvar</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-xs-3">
-                                <div class="form-group">
-                                    <button id="btnCancelar" type="submit" class="form-control btn btn-danger">Cancelar</button>
-                                </div>
+                        <div class="col-md-3 col-xs-3">
+                            <div class="form-group">
+                                <button id="btnCancelar" type="submit" class="form-control btn btn-danger">Cancelar</button>
                             </div>
                         </div>
                     </div>
                 </div>
         </div>
+    </div>
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->

@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Tva Net Telecom - Empresas</title>
+    <title>Tva Net Telecom - Assinantes</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="../css/empresa.css">
+    <link rel="stylesheet" href="../css/assinantes.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -34,7 +34,7 @@
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Operacional</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="../operacional/assinantes.html">Assinantes</a>
+                            <a href="assinantes.html">Assinantes</a>
                         </li>
                         <li>
                             <a href="#">Pré Assinantes</a>
@@ -110,19 +110,19 @@
                     <a href="#pageConfig" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Configuração</a>
                     <ul class="collapse list-unstyled" id="pageConfig">
                         <li>
-                            <a href="usuarios.html">Usuarios</a>
+                            <a href="../configuracao/usuarios.html">Usuários</a>
                         </li>
                         <li>
-                            <a href="usuarioParametro.html">Usuário Parâmetro</a>
+                            <a href="../configuracao/usuarioParametro.html">Usuário Parâmetro</a>
                         </li>
                         <li>
-                            <a href="empresa.html">Empresa</a>
+                            <a href="../configuracao/empresa.html">Empresa</a>
                         </li>
                         <li>
-                            <a href="cep.html">CEP</a>
+                            <a href="../configuracao/cep.html">CEP</a>
                         </li>
                         <li>
-                            <a href="lacre.html">Lacre</a>
+                            <a href="../configuracao/lacre.html">Lacre</a>
                         </li>
                     </ul>
                 </li>
@@ -166,32 +166,35 @@
             
             <div class="container">
                 <div id="topoConteudo">
-                    <a id="novaEmpresa" class="btn btn-primary" href="novaEmpresa.html" role="button"><p id="txtNovo">Nova Empresa</p></a>
-                    <div id="lblEmpresa">
-                        <h4 id="tituloEmpresa">Empresas</h4>
+                    <a id="novoAssinante" class="btn btn-primary" href="novoAssinante.html" role="button"><p id="txtNovo">Novo Assinante</p></a>
+                    <div id="lblAssinante">
+                        <h4 id="tituloAssinante">Assinantes</h4>
                     </div>
                 </div>
-                <div id="frmConsultaEmpresas">
+                <div id="frmConsultaAssinante">
                     <div id="filtro">
                         <form action="">
                             <div class="row">
                                 <div id="cbPesquisaFiltro" class="col-md-2 col-xs-2">
                                     <div class="form-group">
-                                        <label for="comboPesquisa">Tipo de Pesquisa</label>
+                                        <label id="txtFiltroPes" for="comboPesquisa">Tipo de Pesquisa</label>
                                         <select id="cbPesquisa" class="form-control">
-                                            <option value="1">Código</option>
-                                            <option value="2">Razão Social</option>
-                                            <option value="3">Fantasia</option>
-                                            <option value="4">CNPJ</option>
+                                            <option value="1">------</option>
+                                            <option value="2">Contrato</option>
+                                            <option value="3">Nome</option>
+                                            <option value="4">CPF/CNPJ</option>
+                                            <option value="5">Endereço</option>
+                                            <option value="6">Lacre</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div id="cbOrdemFiltro" class="col-md-2 col-xs-2">
+                                <div id="cbPesquisaFiltro" class="col-md-2 col-xs-2">
                                     <div class="form-group">
                                         <label for="cbOrdem">Filtro</label>
                                         <select id="cbOrdem" class="form-control">
-                                            <option value="1">Ordem Crescente</option>
-                                            <option value="2">Ordem Descrecente</option>
+                                            <option value="1">------</option>
+                                            <option value="2">Ordem Crescente</option>
+                                            <option value="3">Ordem Descrecente</option>
                                         </select>
                                     </div>
                                 </div>
@@ -209,80 +212,112 @@
                                 </div>
                             </div>
                         </form>
-                        <div id="frmEmpresas">
-                            <table id="empresas" class="table">
+                        <!-- Large modal -->
+
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+                        <div id="frmAssinante">
+                            <table id="assinantes" class="table">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Razão Social</th>
-                                        <th scope="col">Fantasia</th>
-                                        <th scope="col">CNPJ</th>
-                                        <th scope="col">Telefone</th>
+                                        <th scope="col">Contrato</th>
+                                        <th scope="col">Nome</th>
+                                        <th scope="col">CPF/CNPJ</th>
+                                        <th scope="col">Endereço</th>
+                                        <th scope="col">Número</th>
+                                        <th scope="col">Complemento</th>
+                                        <th scope="col">Lacre</th>
+                                        <th scope="col">Condição</th>
                                         <th scope="col">Ação</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>TVA NET TELECOM LTDA - ME</td>
-                                        <td>TVA NET TELECOM</td>
-                                        <td>32.113.383/0001-19</td>
-                                        <td>(21) 3381-5500</td>
-                                        <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger  buttonAcao">Excluir</button></td>
+                                        <td>Jefferson Sabino Brito</td>
+                                        <td style="text-decoration: none;">157.856.837-41</td>
+                                        <td>Vincente de Carvalho</td>
+                                        <td>142</td>
+                                        <td>Fundos</td>
+                                        <td>151525</td>
+                                        <td style="color: rgb(13, 79, 201); font-weight: bold;">Ativado</td>
+                                        <td><button class="btn btn-info buttonAcao" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">Visualizar</button></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>TVA NET TELECOM LTDA - ME</td>
-                                        <td>TVA NET TELECOM</td>
-                                        <td>32.113.383/0001-19</td>
-                                        <td>(21) 3381-5500</td>
-                                        <td><button class="btn btn-info  buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger  buttonAcao">Excluir</button></td>
+                                        <td>Jefferson Sabino Brito</td>
+                                        <td style="text-decoration: none;">157.856.837-41</td>
+                                        <td>Vincente de Carvalho</td>
+                                        <td>142</td>
+                                        <td>Fundos</td>
+                                        <td>151525</td>
+                                        <td style="color: rgb(153, 143, 4); font-weight: bold;">Suspenso</td>
+                                        <td><button class="btn btn-info buttonAcao">Visualizar</button></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>TVA NET TELECOM LTDA - ME</td>
-                                        <td>TVA NET TELECOM</td>
-                                        <td>32.113.383/0001-19</td>
-                                        <td>(21) 3381-5500</td>
-                                        <td><button class="btn btn-info  buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger  buttonAcao">Excluir</button></td>
+                                        <td>Jefferson Sabino Brito</td>
+                                        <td style="text-decoration: none;">157.856.837-41</td>
+                                        <td>Vincente de Carvalho</td>
+                                        <td>142</td>
+                                        <td>Fundos</td>
+                                        <td>151525</td>
+                                        <td style="color: rgb(202, 37, 15); font-weight: bold;">Inativo</td>
+                                        <td><button class="btn btn-info buttonAcao">Visualizar</button></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>TVA NET TELECOM LTDA - ME</td>
-                                        <td>TVA NET TELECOM</td>
-                                        <td>32.113.383/0001-19</td>
-                                        <td>(21) 3381-5500</td>
-                                        <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
+                                        <td>Jefferson Sabino Brito</td>
+                                        <td style="text-decoration: none;">157.856.837-41</td>
+                                        <td>Vincente de Carvalho</td>
+                                        <td>142</td>
+                                        <td>Fundos</td>
+                                        <td>151525</td>
+                                        <td style="color: rgb(228, 139, 66); font-weight: bold;">Sem Viabilidade</td>
+                                        <td><button class="btn btn-info buttonAcao">Visualizar</button></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>TVA NET TELECOM LTDA - ME</td>
-                                        <td>TVA NET TELECOM</td>
-                                        <td>32.113.383/0001-19</td>
-                                        <td>(21) 3381-5500</td>
-                                        <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
+                                        <td>Jefferson Sabino Brito</td>
+                                        <td style="text-decoration: none;">157.856.837-41</td>
+                                        <td>Vincente de Carvalho</td>
+                                        <td>142</td>
+                                        <td>Fundos</td>
+                                        <td>151525</td>
+                                        <td style="color: rgb(13, 79, 201); font-weight: bold;">Ativado</td>
+                                        <td><button class="btn btn-info buttonAcao">Visualizar</button></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>TVA NET TELECOM LTDA - ME</td>
-                                        <td>TVA NET TELECOM</td>
-                                        <td>32.113.383/0001-19</td>
-                                        <td>(21) 3381-5500</td>
-                                        <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
+                                        <td>Jefferson Sabino Brito</td>
+                                        <td style="text-decoration: none;">157.856.837-41</td>
+                                        <td>Vincente de Carvalho</td>
+                                        <td>142</td>
+                                        <td>Fundos</td>
+                                        <td>151525</td>
+                                        <td style="color: rgb(13, 79, 201); font-weight: bold;">Ativado</td>
+                                        <td><button class="btn btn-info buttonAcao">Visualizar</button></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>TVA NET TELECOM LTDA - ME</td>
-                                        <td>TVA NET TELECOM</td>
-                                        <td>32.113.383/0001-19</td>
-                                        <td id="telTable">(21) 3381-5500</td>
-                                        <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
+                                        <td>Jefferson Sabino Brito</td>
+                                        <td style="text-decoration: none;">157.856.837-41</td>
+                                        <td>Vincente de Carvalho</td>
+                                        <td>142</td>
+                                        <td>Fundos</td>
+                                        <td>151525</td>
+                                        <td style="color: rgb(13, 79, 201); font-weight: bold;">Ativado</td>
+                                        <td><button class="btn btn-info buttonAcao">Visualizar</button></td>
                                     </tr>
-                                    
                                 </tbody>
                             </table>
                         </div>
-                        <div id="NumEmpresas">
+                        <div id="NumAssinante">
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination">
                                     <li class="page-item">
