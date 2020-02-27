@@ -210,6 +210,17 @@ a.article:hover {
     }
 }
 
+.my-custom-scrollbar {
+    height: 200px;
+    overflow: auto;
+    width: 770px;
+    position: relative;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+}
+
 
 /*
     conteudo
@@ -333,4 +344,14 @@ th {
     font-size: 10pt;
     text-align: center;
     width: 105px;
+}
+
+#exampleModalCenter {
+    margin: 0 auto;
+}
+
+.faturaTH {
+    font-weight: normal;
+    font-size: 9pt;
+    text-align: center;
 }
