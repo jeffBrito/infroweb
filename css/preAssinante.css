@@ -10,18 +10,8 @@ body {
 
 #linhaMenu {
     height: 0, 4px;
-    width: 10;
+    width: 100%;
     background-color: #000000d2;
-}
-
-label {
-    font-size: 11pt;
-    font-weight: normal;
-}
-
-option {
-    font-size: 11pt;
-    font-weight: normal;
 }
 
 p {
@@ -30,6 +20,11 @@ p {
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
+}
+
+label {
+    font-size: 11pt;
+    font-weight: normal;
 }
 
 a,
@@ -46,9 +41,9 @@ a:focus {
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
-    box-shadow: 0 0 1em rgba(124, 124, 124, 0.986);
+    box-shadow: 0 0 1em rgba(124, 124, 124, 0.699);
+    box-shadow: 0 0 1em rgba(124, 124, 124, 0.699);
     border-radius: 4px 4px;
-    width: 100%;
 }
 
 .navbar-btn {
@@ -218,12 +213,12 @@ a.article:hover {
 
 
 /*
-    conteudo
+    conteudo0
 */
 
-#frmConsultaEmpresas {
-    width: 1120px;
-    height: 690px;
+#frmCadPreAssinante {
+    width: 1030px;
+    height: 670px;
     background-color: rgb(240, 240, 240);
     box-shadow: 0 0 1em rgba(124, 124, 124, 0.699);
     border-radius: 4px 4px;
@@ -232,76 +227,69 @@ a.article:hover {
     margin-top: 10px;
 }
 
+#frmPreAssinante {
+    width: 1008px;
+    height: 640px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
 #topoConteudo {
-    width: 1120px;
+    width: 1100px;
     height: 50px;
 }
 
-#tituloEmpresa {
+#tituloPreAssinante {
     float: left;
     margin-top: 10px;
 }
 
-#filtro {
-    float: left;
-    margin-top: 8px;
-    margin-left: 8px;
-    width: 1105px;
-    height: 670px;
-}
-
-#razao {
-    margin-left: -15px;
-}
-
-#fantasia {
-    margin-left: -15px;
-}
-
-#estadual {
-    margin-left: -15px;
-}
-
-#endereco {
-    margin-left: -15px;
-}
-
-#logradouro {
-    margin-left: -15px;
-}
-
-#txtLogradouro {
-    width: 269px;
-}
-
-#uf {
-    margin-left: -15px;
-}
-
-#complemento {
-    margin-left: -15px;
-}
-
-#numero {
-    margin-left: -15px;
-}
-
-#celular {
-    margin-left: -15px;
-}
-
-#email {
-    margin-left: -15px;
-}
-
-#logo {
-    margin-left: -15px;
-}
-
-#txtLogo {
-    height: 36px;
+#txtNome {
     font-weight: normal;
     font-size: 11pt;
+}
+
+#cbPessoa {
+    font-weight: normal;
+    font-size: 11pt;
+}
+
+#pessoa {
+    margin-left: -10px;
+}
+
+#txtCpf {
+    font-weight: normal;
+    font-size: 11pt;
+}
+
+#txtRg {
+    font-weight: normal;
+    font-size: 11pt;
+}
+
+#txtDataNascimento {
+    font-weight: normal;
+    font-size: 11pt;
+}
+
+#dataNascimento {
+    margin-left: -15px;
+}
+
+select {
+    font-weight: normal;
+    font-size: 11pt;
+}
+
+option {
+    font-weight: normal;
+    font-size: 11pt;
+}
+
+.tab-pane {
+    height: 450px;
 }
 
 #btnSalvar {

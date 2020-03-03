@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Tva Net Telecom - Novo Lacre</title>
+    <title>Tva Net Telecom - Pré Assinante</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="../css/novoLacre.css">
+    <link rel="stylesheet" href="../css/preAssinante.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -110,19 +110,19 @@
                     <a href="#pageConfig" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Configuração</a>
                     <ul class="collapse list-unstyled" id="pageConfig">
                         <li>
-                            <a href="usuarios.html">Usuários</a>
+                            <a href="../configuracao/usuarios.html">Usuários</a>
                         </li>
                         <li>
-                            <a href="usuarioParametro.html">Usuário Parâmetro</a>
+                            <a href="../configuracao/usuarioParametro.html">Usuário Parâmetro</a>
                         </li>
                         <li>
-                            <a href="empresa.html">Empresa</a>
+                            <a href="../configuracao/empresa.html">Empresa</a>
                         </li>
                         <li>
-                            <a href="cep.html">CEP</a>
+                            <a href="../configuracao/cep.html">CEP</a>
                         </li>
                         <li>
-                            <a href="lacre.html">Lacre</a>
+                            <a href="../configuracao/lacre.html">Lacre</a>
                         </li>
                     </ul>
                 </li>
@@ -137,6 +137,7 @@
             </ul>
             <button id="btnSair" class="btn btn-danger">Sair</button>
         </nav>
+
         <!-- Page Content  -->
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -162,78 +163,89 @@
                     </div>
                 </div>
             </nav>
-                <div id='alert'>
-                    <div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Erro de cadastrado</strong>
+            <div id='alert'>
+                <div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Erro de cadastrado</strong>
                                     <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                             <span aria-hidden='true'>&times;</span>
-                        </button>
+                    </button>
                     </div>
                 </div>
                 <div class="container">
                     <div id="topoConteudo">
-                        <div id="lblCadLacre">
-                            <h4 id="tituloCadLacre">Novo Lacre</h4>
+                        <div id="lblPreAssinante">
+                            <h4 id="tituloPreAssinante">Pré Assinante</h4>
                         </div>
                     </div>
-                    <div id="frmCadLacre">
-                        <div id="frmLacre">
-                            <div class="row">
-                                <div class="col-md-2 col-xs-2">
-                                    <div class="form-group">
-                                        <label for="txtLacre">Lacre *</label>
-                                        <input id="txtLacre" class="form-control" type="text" name="txtLacre" required>
-                                    </div>
+                    <div id="frmCadPreAssinante">
+                        <div id="frmPreAssinante">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-dados-tab" data-toggle="tab" href="#nav-dados" role="tab" aria-controls="nav-home" aria-selected="true">
+                                        <label>Dados Pessoais</label>
+                                    </a>
+                                    <a class="nav-item nav-link" id="nav-contato-tab" data-toggle="tab" href="#nav-contato" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                        <label>Contato</label>
+                                    </a>
+                                    <a class="nav-item nav-link" id="nav-endereco-tab" data-toggle="tab" href="#nav-endereco" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                        <label>Endereço</label>
+                                    </a>
                                 </div>
-                                <div id="corLacre" class="col-md-2 col-xs-2">
-                                    <div class="form-group">
-                                        <label for="txtCorLacre">Cor do Lacre *</label>
-                                        <input id="txtCorLacre" class="form-control" type="text" name="txtCorLacre" required>
-                                    </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <br>
+                                    <form action="" method="post">
+                                        <div class="row">
+                                            <div id="nome" class="col-md-8 col-xs-8">
+                                                <div class="form-group">
+                                                    <label for="txtNome">Nome *</label>
+                                                    <input id="txtNome" name="txtNome" type="text" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div id="pessoa" class="col-md-3 col-xs-3">
+                                                <div class="form-group">
+                                                    <label for="txtPessoa">Tipo de Pessoa</label>
+                                                    <select name="txtPessoa" id="txtPessoa" class="form-control">
+                                                        <option value="0">------</option>
+                                                        <option value="1">Pessoa Física</option>
+                                                        <option value="2">Pessoa Jurídica</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div id="rg" class="col-md-5 col-xs-5">
+                                                <div class="form-group">
+                                                    <label for="txtRg">RG</label>
+                                                    <input id="txtRg" name="txtRg" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div id="dataNascimento" class="col-md-4 col-xs-4">
+                                                <div class="form-group">
+                                                    <label for="txtNascimento">Data de Nascimento</label>
+                                                    <input id="txtNascimento" name="txtNascimento" type="date" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div id="contrato" class="col-md-3 col-xs-3">
-                                    <div class="form-group">
-                                        <label for="txtContrato">Contrato *</label>
-                                        <input id="txtContrato" class="form-control" type="text" name="txtContrato" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" required>
-                                    </div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
                                 </div>
-                                <div id="node" class="col-md-4 col-xs-4">
-                                    <div class="form-group">
-                                        <label for="cbNode">Node *</label>
-                                        <select id="cbNode" class="form-control" required>
-                                        <option value="0">-------</option>
-                                        <option value="1">MADUREIRA</option>
-                                    </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div id="condicao" class="col-md-3 col-xs-3">
-                                    <div class="form-group">
-                                        <label for="cbCondicao">Condição do Lacre *</label>
-                                        <select id="cbCondicao" class="form-control" required>
-                                        <option value="1">Ativo</option>
-                                        <option value="2">Inativo</option>
-                                    </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 col-xs-3">
-                                    <div class="form-group">
-                                        <button id="btnSalvar" type="submit" class=" form-control btn btn-success">Salvar</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-xs-3">
-                                    <div class="form-group">
-                                        <button id="btnCancelar" type="submit" class="form-control btn btn-danger">Cancelar</button>
-                                    </div>
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         </div>
+
+        <script type="text/javascript">
+            $("#txtCnpj").mask("99.999.999/9999-99");
+            $("#txtCep").mask("99999-999");
+            $("#txtTel").mask("(99) 9999-9999");
+            $("#txtCel").mask("(99) 99999-9999");
+        </script>
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -163,194 +163,195 @@
                     </div>
                 </div>
             </nav>
-            
-            <div class="container">
-                <div id="topoConteudo">
-                    <div id="lblEmpresa">
-                        <h4 id="tituloEmpresa">Nova Empresa</h4>
+            <div id='alert'>
+                <div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Erro de cadastrado</strong>
+                                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                    </button>
                     </div>
                 </div>
-                <div id="frmConsultaEmpresas">
-                    <div id="filtro">
-                        <form action="">
-                            <div class="row">
-                                <div class="col-md-2 col-xs-2">
-                                    <div class="form-group">
-                                        <label for="txtCodigo">Código</label>
-                                        <input id="txtCodigo" type="text" class="form-control" disabled>
-                                    </div>
-                                </div>
-                                <div id="razao" class="col-md-5 col-xs-5">
-                                    <div class="form-group">
-                                        <label for="txtRazao">Razão Social *</label>
-                                        <input id="txtRazao" type="text" class="form-control" required>
-                                    </div>
-                                </div>
-                                <div id="fantasia" class="col-md-5 col-xs-5">
-                                    <div class="form-group">
-                                        <label for="txtFatasia">Nome Fantasia *</label>
-                                        <input id="txtFatasia" type="text" class="form-control" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div id="cnpj" class="col-md-4 col-xs-4">
-                                    <div class="form-group">
-                                        <label for="txtCnpj">CNPJ *</label>
-                                        <input id="txtCnpj" name="txtCnpj" type="text" class="form-control" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" required>
-                                    </div>
-                                </div>
-                                <div id="estadual" class="col-md-3 col-xs-3">
-                                    <div class="form-group">
-                                        <label for="txtInscEstadual">Inscriçao estadual</label>
-                                        <input id="txtInscEstadual" name="txtInscEstadual" type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div id="cep" class="col-md-2 col-xs-2">
-                                    <div class="form-group">
-                                        <label for="txtCep">CEP *</label>
-                                        <input id="txtCep" name="txtCep" type="text" class="form-control" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}">
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div id="cep" class="col-md-2 col-xs-2">
-                                    <div class="form-group">
-                                        <label for="txtCep">CEP *</label>
-                                        <input id="txtCep" name="txtCep" type="text" class="form-control" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}">
-                                    </div>
-                                </div>
-                                <div id="endereco" class="col-md-4 col-xs-4">
-                                    <div class="form-group">
-                                        <label for="txtEndereco">Endereço</label>
-                                        <input id="txtEndereco" name="txtEndereco" type="text" class="form-control" disabled>
-                                    </div>
-                                </div>
-                                <div id="logradouro" class="col-md-3 col-xs-3">
-                                    <div class="form-group">
-                                        <label for="txtLogradouro">Logradouro</label>
-                                        <input id="txtLogradouro" name="txtLogradouro" type="text" class="form-control" disabled>
-                                    </div>
-                                </div>
-                                <div id="bairro" class="col-md-3 col-xs-3">
-                                    <div class="form-group">
-                                        <label for="txtBairro">Bairro</label>
-                                        <input id="txtBairro" name="txtBairro" type="text" class="form-control" disabled>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div id="cidade" class="col-md-3 col-xs-3">
-                                    <div class="form-group">
-                                        <label for="txtCidade">Cidade</label>
-                                        <input id="txtCidade" name="txtCidade" type="text" class="form-control" disabled>
-                                    </div>
-                                </div>
-                                <div id="complemento" class="col-md-3 col-xs-3">
-                                    <label for="txtComplemento">Complemento</label>
-                                    <input id="txtComplemento" name="txtComplemento" type="text" class="form-control">
-                                </div>
-                                <div id="numero" class="col-md-2 col-xs-2">
-                                    <div class="form-group">
-                                        <label for="txtNumero">Numero</label>
-                                        <input id="txtNumero" name="txtNumero" type="text" class="form-control" required>
-                                    </div>
-                                </div>
-                                <div id="uf" class="col-md-1 col-xs-1">
-                                    <div class="form-group">
-                                        <label for="txtUf">UF</label>
-                                        <input id="txtUf" name="txtUf" type="text" class="form-control" disabled>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div id="telefone" class="col-md-3 col-xs-3">
-                                    <div class="form-group">
-                                        <label for="txtTel">Telefone *</label>
-                                        <input id="txtTel" name="txtTel" type="text" class="form-control" required>
-                                    </div>
-                                </div>
-                                <div id="celular" class="col-md-3 col-xs-3">
-                                    <div class="form-group">
-                                        <label for="txtCel">Celular</label>
-                                        <input id="txtCel" name="txtCel" type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div id="email" class="col-md-6 col-xs-6">
-                                    <div class="form-group">
-                                        <label for="txtEmail">Email</label>
-                                        <input id="txtEmail" name="txtEmail" type="email" class="form-control">
-                                    </div>  
-                                </div>
-                                <div id="home" class="col-md-4 col-xs-4">
-                                    <div class="form-group">
-                                        <label for="txtHome">Site</label>
-                                        <input id="txtHome" name="txtHome" type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div id="logo" class="col-md-7 col-xs-7">
-                                    <div class="form-group">
-                                        <label for="txtLogo">Logo *</label>
-                                        <input id="txtLogo" name="txtLogo" type="file" class="form-control-file" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 col-xs-3">
-                                    <div class="form-group">
-                                        <button id="btnSalvar" type="submit" class="form-control btn btn-success">Salvar</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-xs-3">
-                                    <div class="form-group">
-                                        <button id="btnCancelar" type="submit" class="form-control btn btn-danger">Cancelar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                <div class="container">
+                    <div id="topoConteudo">
+                        <div id="lblEmpresa">
+                            <h4 id="tituloEmpresa">Nova Empresa</h4>
+                        </div>
                     </div>
-                </div>
+                    <div id="frmConsultaEmpresas">
+                        <div id="filtro">
+                            <form action="">
+                                <div class="row" style="margin-top: 5px;">
+                                    <div class="col-md-2 col-xs-2">
+                                        <div class="form-group">
+                                            <label for="txtCodigo">Código</label>
+                                            <input id="txtCodigo" type="text" class="form-control" disabled>
+                                        </div>
+                                    </div>
+                                    <div id="razao" class="col-md-5 col-xs-5">
+                                        <div class="form-group">
+                                            <label for="txtRazao">Razão Social *</label>
+                                            <input id="txtRazao" type="text" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div id="fantasia" class="col-md-5 col-xs-5">
+                                        <div class="form-group">
+                                            <label for="txtFatasia">Nome Fantasia *</label>
+                                            <input id="txtFatasia" type="text" class="form-control" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div id="cnpj" class="col-md-4 col-xs-4">
+                                        <div class="form-group">
+                                            <label for="txtCnpj">CNPJ *</label>
+                                            <input id="txtCnpj" name="txtCnpj" type="text" class="form-control" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" required>
+                                        </div>
+                                    </div>
+                                    <div id="estadual" class="col-md-3 col-xs-3">
+                                        <div class="form-group">
+                                            <label for="txtInscEstadual">Inscriçao estadual</label>
+                                            <input id="txtInscEstadual" name="txtInscEstadual" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div id="cep" class="col-md-2 col-xs-2">
+                                        <div class="form-group">
+                                            <label for="txtCep">CEP *</label>
+                                            <input id="txtCep" name="txtCep" type="text" class="form-control" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}">
+                                        </div>
+                                    </div>
+                                    <div id="endereco" class="col-md-4 col-xs-4">
+                                        <div class="form-group">
+                                            <label for="txtEndereco">Endereço</label>
+                                            <input id="txtEndereco" name="txtEndereco" type="text" class="form-control" disabled>
+                                        </div>
+                                    </div>
+                                    <div id="logradouro" class="col-md-3 col-xs-3">
+                                        <div class="form-group">
+                                            <label for="txtLogradouro">Logradouro</label>
+                                            <input id="txtLogradouro" name="txtLogradouro" type="text" class="form-control" disabled>
+                                        </div>
+                                    </div>
+                                    <div id="bairro" class="col-md-3 col-xs-3">
+                                        <div class="form-group">
+                                            <label for="txtBairro">Bairro</label>
+                                            <input id="txtBairro" name="txtBairro" type="text" class="form-control" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div id="cidade" class="col-md-3 col-xs-3">
+                                        <div class="form-group">
+                                            <label for="txtCidade">Cidade</label>
+                                            <input id="txtCidade" name="txtCidade" type="text" class="form-control" disabled>
+                                        </div>
+                                    </div>
+                                    <div id="complemento" class="col-md-3 col-xs-3">
+                                        <label for="txtComplemento">Complemento</label>
+                                        <input id="txtComplemento" name="txtComplemento" type="text" class="form-control">
+                                    </div>
+                                    <div id="numero" class="col-md-2 col-xs-2">
+                                        <div class="form-group">
+                                            <label for="txtNumero">Numero</label>
+                                            <input id="txtNumero" name="txtNumero" type="text" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div id="uf" class="col-md-1 col-xs-1">
+                                        <div class="form-group">
+                                            <label for="txtUf">UF</label>
+                                            <input id="txtUf" name="txtUf" type="text" class="form-control" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div id="telefone" class="col-md-3 col-xs-3">
+                                        <div class="form-group">
+                                            <label for="txtTel">Telefone *</label>
+                                            <input id="txtTel" name="txtTel" type="text" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div id="celular" class="col-md-3 col-xs-3">
+                                        <div class="form-group">
+                                            <label for="txtCel">Celular</label>
+                                            <input id="txtCel" name="txtCel" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div id="email" class="col-md-6 col-xs-6">
+                                        <div class="form-group">
+                                            <label for="txtEmail">Email</label>
+                                            <input id="txtEmail" name="txtEmail" type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div id="home" class="col-md-4 col-xs-4">
+                                        <div class="form-group">
+                                            <label for="txtHome">WebSite</label>
+                                            <input id="txtHome" name="txtHome" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div id="logo" class="col-md-7 col-xs-7">
+                                        <div class="form-group">
+                                            <label for="txtLogo">Logo *</label>
+                                            <input id="txtLogo" name="txtLogo" type="file" class="form-control-file" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-3">
+                                        <div class="form-group">
+                                            <button id="btnSalvar" type="submit" class="form-control btn btn-success">Salvar</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-3">
+                                        <div class="form-group">
+                                            <button id="btnCancelar" type="submit" class="form-control btn btn-danger">Cancelar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
-                <!-- jQuery CDN - Slim version (=without AJAX) -->
-               <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                <!-- Popper.JS -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-                <!-- Bootstrap JS -->
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-                
-                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-                
-                <script type="text/javascript">
-                    $("#txtCnpj").mask("99.999.999/9999-99");
-                    $("#txtCep").mask("99999-999");
-                    $("#txtTel").mask("(99) 9999-9999");
-                    $("#txtCel").mask("(99) 99999-9999");
-                </script>
+                    <!-- jQuery CDN - Slim version (=without AJAX) -->
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                    <!-- Popper.JS -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+                    <!-- Bootstrap JS -->
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-                <script type="text/javascript">
-                    $(document).ready(function() {
-                        $('#sidebarCollapse').on('click', function() {
-                            $('#sidebar').toggleClass('active');
+                    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+                    <script type="text/javascript">
+                        $("#txtCnpj").mask("99.999.999/9999-99");
+                        $("#txtCep").mask("99999-999");
+                        $("#txtTel").mask("(99) 9999-9999");
+                        $("#txtCel").mask("(99) 99999-9999");
+                    </script>
+
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+                            $('#sidebarCollapse').on('click', function() {
+                                $('#sidebar').toggleClass('active');
+                            });
                         });
-                    });
-                </script>
-                <script>
-                    $(document).ready(function() {
-                        // convert selects already on the page at dom load
-                        $('select.form-control').combobox();
+                    </script>
+                    <script>
+                        $(document).ready(function() {
+                            // convert selects already on the page at dom load
+                            $('select.form-control').combobox();
 
-                        $('#it').click(function(e) {
-                            $('ul.dropdown-menu').toggle();
+                            $('#it').click(function(e) {
+                                $('ul.dropdown-menu').toggle();
+                            });
+
+                            //  $('input').focus(function(e){
+                            //    $('ul.dropdown-menu').toggle();
+                            //  });
+
                         });
-
-                        //  $('input').focus(function(e){
-                        //    $('ul.dropdown-menu').toggle();
-                        //  });
-
-                    });
-                </script>
+                    </script>
 </body>
 
 </html>

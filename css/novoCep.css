@@ -296,10 +296,14 @@ option {
     height: 45px;
     box-shadow: 0 0 1em rgba(124, 124, 124, 0.699);
     margin-top: 5px;
+    font-weight: normal;
+    font-size: 11pt;
 }
 
 #btnCancelar {
     height: 45px;
     box-shadow: 0 0 1em rgba(124, 124, 124, 0.699);
     margin-top: 5px;
+    font-weight: normal;
+    font-size: 11pt;
 }

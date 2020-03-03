@@ -137,7 +137,6 @@
             </ul>
             <button id="btnSair" class="btn btn-danger">Sair</button>
         </nav>
-
         <!-- Page Content  -->
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -163,176 +162,185 @@
                     </div>
                 </div>
             </nav>
-            
-            <div class="container">
-                <div id="topoConteudo">
-                    <a id="novaEmpresa" class="btn btn-primary" href="novaEmpresa.html" role="button"><p id="txtNovo">Nova Empresa</p></a>
-                    <div id="lblEmpresa">
-                        <h4 id="tituloEmpresa">Empresas</h4>
+            <div id='alert'>
+                <div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Erro de cadastrado</strong>
+                                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                    </button>
                     </div>
                 </div>
-                <div id="frmConsultaEmpresas">
-                    <div id="filtro">
-                        <form action="">
-                            <div class="row">
-                                <div id="cbPesquisaFiltro" class="col-md-2 col-xs-2">
-                                    <div class="form-group">
-                                        <label for="comboPesquisa">Tipo de Pesquisa</label>
-                                        <select id="cbPesquisa" class="form-control">
+                <div class="container">
+                    <div id="topoConteudo">
+                        <a id="novaEmpresa" class="btn btn-primary" href="novaEmpresa.html" role="button">
+                            <p id="txtNovo">Nova Empresa</p>
+                        </a>
+                        <div id="lblEmpresa">
+                            <h4 id="tituloEmpresa">Empresas</h4>
+                        </div>
+                    </div>
+                    <div id="frmConsultaEmpresas">
+                        <div id="filtro">
+                            <form action="">
+                                <div class="row">
+                                    <div id="cbPesquisaFiltro" class="col-md-2 col-xs-2">
+                                        <div class="form-group">
+                                            <label for="comboPesquisa">Tipo de Pesquisa</label>
+                                            <select id="cbPesquisa" class="form-control">
                                             <option value="1">Código</option>
                                             <option value="2">Razão Social</option>
                                             <option value="3">Fantasia</option>
                                             <option value="4">CNPJ</option>
                                         </select>
+                                        </div>
                                     </div>
-                                </div>
-                                <div id="cbOrdemFiltro" class="col-md-2 col-xs-2">
-                                    <div class="form-group">
-                                        <label for="cbOrdem">Filtro</label>
-                                        <select id="cbOrdem" class="form-control">
+                                    <div id="cbOrdemFiltro" class="col-md-2 col-xs-2">
+                                        <div class="form-group">
+                                            <label for="cbOrdem">Filtro</label>
+                                            <select id="cbOrdem" class="form-control">
                                             <option value="1">Ordem Crescente</option>
                                             <option value="2">Ordem Descrecente</option>
                                         </select>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-8 col-xs-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-xs-2">
+                                        <div class="form-group">
+                                            <button id="btnPes" class="form-control btn btn-info">Pesquisar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="frmEmpresas">
+                                <table id="empresas" class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Razão Social</th>
+                                            <th scope="col">Fantasia</th>
+                                            <th scope="col">CNPJ</th>
+                                            <th scope="col">Telefone</th>
+                                            <th scope="col">Ação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>TVA NET TELECOM LTDA - ME</td>
+                                            <td>TVA NET TELECOM</td>
+                                            <td>32.113.383/0001-19</td>
+                                            <td>(21) 3381-5500</td>
+                                            <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger  buttonAcao">Excluir</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>TVA NET TELECOM LTDA - ME</td>
+                                            <td>TVA NET TELECOM</td>
+                                            <td>32.113.383/0001-19</td>
+                                            <td>(21) 3381-5500</td>
+                                            <td><button class="btn btn-info  buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger  buttonAcao">Excluir</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>TVA NET TELECOM LTDA - ME</td>
+                                            <td>TVA NET TELECOM</td>
+                                            <td>32.113.383/0001-19</td>
+                                            <td>(21) 3381-5500</td>
+                                            <td><button class="btn btn-info  buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger  buttonAcao">Excluir</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>TVA NET TELECOM LTDA - ME</td>
+                                            <td>TVA NET TELECOM</td>
+                                            <td>32.113.383/0001-19</td>
+                                            <td>(21) 3381-5500</td>
+                                            <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>TVA NET TELECOM LTDA - ME</td>
+                                            <td>TVA NET TELECOM</td>
+                                            <td>32.113.383/0001-19</td>
+                                            <td>(21) 3381-5500</td>
+                                            <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>TVA NET TELECOM LTDA - ME</td>
+                                            <td>TVA NET TELECOM</td>
+                                            <td>32.113.383/0001-19</td>
+                                            <td>(21) 3381-5500</td>
+                                            <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>TVA NET TELECOM LTDA - ME</td>
+                                            <td>TVA NET TELECOM</td>
+                                            <td>32.113.383/0001-19</td>
+                                            <td id="telTable">(21) 3381-5500</td>
+                                            <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
                             </div>
-                            <div class="row">
-                                <div class="col-md-8 col-xs-8">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-xs-2">
-                                    <div class="form-group">
-                                        <button id="btnPes" class="form-control btn btn-info">Pesquisar</button>
-                                    </div>
-                                </div>
+                            <div id="NumEmpresas">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
-                        </form>
-                        <div id="frmEmpresas">
-                            <table id="empresas" class="table">
-                                <thead class="thead-dark">
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Razão Social</th>
-                                        <th scope="col">Fantasia</th>
-                                        <th scope="col">CNPJ</th>
-                                        <th scope="col">Telefone</th>
-                                        <th scope="col">Ação</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>TVA NET TELECOM LTDA - ME</td>
-                                        <td>TVA NET TELECOM</td>
-                                        <td>32.113.383/0001-19</td>
-                                        <td>(21) 3381-5500</td>
-                                        <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger  buttonAcao">Excluir</button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>TVA NET TELECOM LTDA - ME</td>
-                                        <td>TVA NET TELECOM</td>
-                                        <td>32.113.383/0001-19</td>
-                                        <td>(21) 3381-5500</td>
-                                        <td><button class="btn btn-info  buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger  buttonAcao">Excluir</button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>TVA NET TELECOM LTDA - ME</td>
-                                        <td>TVA NET TELECOM</td>
-                                        <td>32.113.383/0001-19</td>
-                                        <td>(21) 3381-5500</td>
-                                        <td><button class="btn btn-info  buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger  buttonAcao">Excluir</button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>TVA NET TELECOM LTDA - ME</td>
-                                        <td>TVA NET TELECOM</td>
-                                        <td>32.113.383/0001-19</td>
-                                        <td>(21) 3381-5500</td>
-                                        <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>TVA NET TELECOM LTDA - ME</td>
-                                        <td>TVA NET TELECOM</td>
-                                        <td>32.113.383/0001-19</td>
-                                        <td>(21) 3381-5500</td>
-                                        <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>TVA NET TELECOM LTDA - ME</td>
-                                        <td>TVA NET TELECOM</td>
-                                        <td>32.113.383/0001-19</td>
-                                        <td>(21) 3381-5500</td>
-                                        <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>TVA NET TELECOM LTDA - ME</td>
-                                        <td>TVA NET TELECOM</td>
-                                        <td>32.113.383/0001-19</td>
-                                        <td id="telTable">(21) 3381-5500</td>
-                                        <td><button class="btn btn-info buttonAcao">Alterar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger buttonAcao">Excluir</button></td>
-                                    </tr>
-                                    
-                                </tbody>
-                            </table>
-                        </div>
-                        <div id="NumEmpresas">
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination">
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
                         </div>
                     </div>
-                </div>
 
-                <!-- jQuery CDN - Slim version (=without AJAX) -->
-                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                <!-- Popper.JS -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-                <!-- Bootstrap JS -->
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+                    <!-- jQuery CDN - Slim version (=without AJAX) -->
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                    <!-- Popper.JS -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+                    <!-- Bootstrap JS -->
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-                <script type="text/javascript">
-                    $(document).ready(function() {
-                        $('#sidebarCollapse').on('click', function() {
-                            $('#sidebar').toggleClass('active');
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+                            $('#sidebarCollapse').on('click', function() {
+                                $('#sidebar').toggleClass('active');
+                            });
                         });
-                    });
-                </script>
-                <script>
-                    $(document).ready(function() {
-                        // convert selects already on the page at dom load
-                        $('select.form-control').combobox();
+                    </script>
+                    <script>
+                        $(document).ready(function() {
+                            // convert selects already on the page at dom load
+                            $('select.form-control').combobox();
 
-                        $('#it').click(function(e) {
-                            $('ul.dropdown-menu').toggle();
+                            $('#it').click(function(e) {
+                                $('ul.dropdown-menu').toggle();
+                            });
+
+                            //  $('input').focus(function(e){
+                            //    $('ul.dropdown-menu').toggle();
+                            //  });
+
                         });
-
-                        //  $('input').focus(function(e){
-                        //    $('ul.dropdown-menu').toggle();
-                        //  });
-
-                    });
-                </script>
+                    </script>
 </body>
 
 </html>
