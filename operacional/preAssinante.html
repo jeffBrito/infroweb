@@ -182,57 +182,150 @@
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <a class="nav-item nav-link active" id="nav-dados-tab" data-toggle="tab" href="#nav-dados" role="tab" aria-controls="nav-home" aria-selected="true">
-                                        <label>Dados Pessoais</label>
+                                        <label><strong>Dados Pessoais</strong></label>
                                     </a>
                                     <a class="nav-item nav-link" id="nav-contato-tab" data-toggle="tab" href="#nav-contato" role="tab" aria-controls="nav-profile" aria-selected="false">
-                                        <label>Contato</label>
+                                        <label><strong>Contato</strong></label>
                                     </a>
                                     <a class="nav-item nav-link" id="nav-endereco-tab" data-toggle="tab" href="#nav-endereco" role="tab" aria-controls="nav-contact" aria-selected="false">
-                                        <label>Endereço</label>
+                                        <label><strong>Endereço</strong></label>
                                     </a>
                                 </div>
                             </nav>
                             <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="tab-pane fade show active" id="nav-dados" role="tabpanel" aria-labelledby="nav-dados-tab">
                                     <br>
-                                    <form action="" method="post">
-                                        <div class="row">
-                                            <div id="nome" class="col-md-8 col-xs-8">
-                                                <div class="form-group">
-                                                    <label for="txtNome">Nome *</label>
-                                                    <input id="txtNome" name="txtNome" type="text" class="form-control" required>
-                                                </div>
-                                            </div>
-                                            <div id="pessoa" class="col-md-3 col-xs-3">
-                                                <div class="form-group">
-                                                    <label for="txtPessoa">Tipo de Pessoa</label>
-                                                    <select name="txtPessoa" id="txtPessoa" class="form-control">
-                                                        <option value="0">------</option>
-                                                        <option value="1">Pessoa Física</option>
-                                                        <option value="2">Pessoa Jurídica</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div id="rg" class="col-md-5 col-xs-5">
-                                                <div class="form-group">
-                                                    <label for="txtRg">RG</label>
-                                                    <input id="txtRg" name="txtRg" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div id="dataNascimento" class="col-md-4 col-xs-4">
-                                                <div class="form-group">
-                                                    <label for="txtNascimento">Data de Nascimento</label>
-                                                    <input id="txtNascimento" name="txtNascimento" type="date" class="form-control">
-                                                </div>
+                                    <div class="row">
+                                        <div id="nome" class="col-md-8 col-xs-8">
+                                            <div class="form-group">
+                                                <label for="txtNome">Nome / Razão Social *</label>
+                                                <input id="txtNome" name="txtNome" type="text" class="form-control" required>
                                             </div>
                                         </div>
-                                    </form>
+                                        <div id="pessoa" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtPessoa">Tipo de Pessoa</label>
+                                                <select name="txtPessoa" id="txtPessoa" class="form-control">
+                                                    <option value="1">Pessoa Física</option>
+                                                    <option value="2">Pessoa Jurídica</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="cpf" class="col-md-5 col-xs-5">
+                                            <div class="form-group">
+                                                <label for="txtCpf">CPF / CNPJ</label>
+                                                <input id="txtCpf" name="txtCpf" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div id="dataNascimento" class="col-md-4 col-xs-4">
+                                            <div class="form-group">
+                                                <label for="txtNascimento">Data de Nascimento</label>
+                                                <input id="txtNascimento" name="txtNascimento" type="date" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-
+                                <div class="tab-pane fade" id="nav-contato" role="tabpanel" aria-labelledby="nav-contato-tab">
+                                    <br>
+                                    <div class="row">
+                                        <div id="tel1" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtTel1">Telefone 1</label>
+                                                <input id="txtTel1" name="txtTel1" type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div id="tel2" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtTel2">Telefone 2</label>
+                                                <input id="txtTel2" name="txtTel2" type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div id="cel1" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtCel1">Celular 1</label>
+                                                <input id="txtCel1" name="txtCel1" type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="cel2" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtCel2">Celular 2</label>
+                                                <input id="txtCel2" name="txtCel2" type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div id="email" class="col-md-8 col-xs-8">
+                                            <div class="form-group">
+                                                <label for="txtEmail">Email</label>
+                                                <input id="txtEmail" name="txtEmail" type="email" class="form-control" required>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-
+                                <div class="tab-pane fade" id="nav-endereco" role="tabpanel" aria-labelledby="nav-endereco-tab">
+                                    <br>
+                                    <div class="row">
+                                        <div id="cep" class="col-md-2 col-xs-2">
+                                            <div class="form-group">
+                                                <label for="txtCep">CEP *</label>
+                                                <input id="txtCep" name="txtCep" type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div id="endereco" class="col-md-6 col-xs-6">
+                                            <div class="form-group">
+                                                <label for="txtEndereco">Endereço</label>
+                                                <input id="txtEndereco" name="txtEndereco" type="text" class="form-control" disabled>
+                                            </div>
+                                        </div>
+                                        <div id="bairro" class="col-md-4 col-xs-4">
+                                            <div class="form-group">
+                                                <label for="txtBairro">Bairro</label>
+                                                <input id="txtBairro" name="txtBairro" type="text" class="form-control" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="cidade" class="col-md-4 col-xs-4">
+                                            <div class="form-group">
+                                                <label for="txtCidade">Cidade</label>
+                                                <input id="txtCidade" name="txtCidade" type="text" class="form-control" disabled>
+                                            </div>
+                                        </div>
+                                        <div id="uf" class="col-md-1 col-xs-1">
+                                            <div class="form-group">
+                                                <label for="txtUf">UF</label>
+                                                <input id="txtUf" name="txtUf" type="text" class="form-control" disabled>
+                                            </div>
+                                        </div>
+                                        <div id="complemento" class="col-md-4 col-xs-4">
+                                            <div class="form-group">
+                                                <label for="txtComplemento">Complemento</label>
+                                                <input id="txtComplemento" name="txtComplemento" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="referencia" class="col-md-5 col-xs-5">
+                                            <div class="form-group">
+                                                <label for="txtReferencia">Referência</label>
+                                                <input id="txtReferencia" name="txtReferencia" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="botoes">
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-3">
+                                        <div class="form-group">
+                                            <button id="btnSalvar" type="submit" class=" form-control btn btn-success">Salvar</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-3">
+                                        <div class="form-group">
+                                            <button id="btnCancelar" type="submit" class="form-control btn btn-danger">Cancelar</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -243,8 +336,8 @@
         <script type="text/javascript">
             $("#txtCnpj").mask("99.999.999/9999-99");
             $("#txtCep").mask("99999-999");
-            $("#txtTel").mask("(99) 9999-9999");
-            $("#txtCel").mask("(99) 99999-9999");
+            $("#txtTel1").mask("(99) 9999-9999");
+            $("#txtCel1").mask("(99) 99999-9999");
         </script>
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->

@@ -242,6 +242,15 @@ a.article:hover {
     position: relative;
 }
 
+#preAssinante {
+    margin-left: 15px;
+    margin-top: -8px !important;
+    float: right;
+    height: 50px;
+    width: 150px;
+    box-shadow: 0 0 1em rgba(124, 124, 124, 0.534);
+}
+
 #novoAssinante {
     margin-top: -8px !important;
     float: right;

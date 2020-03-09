@@ -245,6 +245,10 @@ a.article:hover {
     margin-top: 10px;
 }
 
+#nav-dados {
+    background-color: rgba(196, 196, 196, 0.253);
+}
+
 #txtNome {
     font-weight: normal;
     font-size: 11pt;
@@ -253,10 +257,12 @@ a.article:hover {
 #cbPessoa {
     font-weight: normal;
     font-size: 11pt;
+    width: 244px;
+    height: 35px;
 }
 
 #pessoa {
-    margin-left: -10px;
+    margin-left: -15px;
 }
 
 #txtCpf {
@@ -264,18 +270,143 @@ a.article:hover {
     font-size: 11pt;
 }
 
-#txtRg {
+#txtNascimento {
     font-weight: normal;
     font-size: 11pt;
-}
-
-#txtDataNascimento {
-    font-weight: normal;
-    font-size: 11pt;
+    width: 244px;
+    height: 35px;
 }
 
 #dataNascimento {
     margin-left: -15px;
+}
+
+#nav-contato {
+    background-color: rgba(196, 196, 196, 0.253);
+}
+
+#txtTel1 {
+    font-weight: normal;
+    font-size: 11pt;
+    width: 244px;
+    height: 35px;
+}
+
+#txtTel2 {
+    font-weight: normal;
+    font-size: 11pt;
+    width: 244px;
+    height: 35px;
+}
+
+#tel2 {
+    margin-left: -15x;
+}
+
+#txtCel1 {
+    font-weight: normal;
+    font-size: 11pt;
+    width: 244px;
+    height: 35px;
+}
+
+#cel1 {
+    margin-left: -15x;
+}
+
+#txtCel2 {
+    font-weight: normal;
+    font-size: 11pt;
+    width: 244px;
+    height: 35px;
+}
+
+#cel2 {
+    margin-left: -15x;
+}
+
+#txtEmail {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#email {
+    margin-left: -15x;
+}
+
+#nav-endereco {
+    background-color: rgba(196, 196, 196, 0.253);
+}
+
+#txtCep {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#txtEndereco {
+    font-weight: normal;
+    font-size: 11pt;
+    background-color: rgb(224, 224, 224);
+    float: left;
+}
+
+#endereco {
+    margin-left: -15x;
+}
+
+#txtBairro {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+    background-color: rgb(224, 224, 224);
+}
+
+#bairro {
+    margin-left: -15x;
+}
+
+#txtCidade {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+    background-color: rgb(224, 224, 224);
+}
+
+#cidade {
+    margin-left: -15x;
+}
+
+#txtUf {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+    background-color: rgb(224, 224, 224);
+}
+
+#uf {
+    margin-left: -15x;
+}
+
+#txtComplemento {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#complemento {
+    margin-left: -15x;
+}
+
+#txtReferencia {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#referencia {
+    margin-left: -15x;
 }
 
 select {

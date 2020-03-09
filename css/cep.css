@@ -326,6 +326,8 @@ th {
     font-weight: normal;
     font-size: 11pt;
     text-align: center;
+    height: 40px;
+    width: 65px;
 }
 
 .buttonAcao {
