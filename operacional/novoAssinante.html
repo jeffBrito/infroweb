@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Tva Net Telecom - Novo Assinante</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">]
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../css/novoAssinante.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="central.php"><img id="logoTva" src="../imagens/logo3.png" alt="logo tvanet"></a>
+            </div>
+
+            <ul class="list-unstyled components">
+                <a href="central.php">
+                    <p>Menu Principal</p>
+                </a>
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Operacional</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="assinantes.html">Assinantes</a>
+                        </li>
+                        <li>
+                            <a href="preAssinante.html">Pré Assinantes</a>
+                        </li>
+                        <li>
+                            <a href="#">Atendimentos</a>
+                        </li>
+                        <li>
+                            <a href="#">Ordem de Serviços</a>
+                        </li>
+                        <li>
+                            <a href="#">Roteiro</a>
+                        </li>
+                        <li>
+                            <a href="#">Agenda</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageRede" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Redes</a>
+                    <ul class="collapse list-unstyled" id="pageRede">
+                        <li>
+                            <a href="#">Node</a>
+                        </li>
+                        <li>
+                            <a href="#">Rede</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Financeiro</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Faturas</a>
+                        </li>
+                        <li>
+                            <a href="#">Movimento de Carteira</a>
+                        </li>
+                        <li>
+                            <a href="#">Contas</a>
+                        </li>
+                        <li>
+                            <a href="#">Processamento de Arquivos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageRh" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">RH</a>
+                    <ul class="collapse list-unstyled" id="pageRh">
+                        <li>
+                            <a href="#">Funcionário</a>
+                        </li>
+                        <li>
+                            <a href="#">Folha de Ponto</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageRelatorios" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Relatórios</a>
+                    <ul class="collapse list-unstyled" id="pageRelatorios">
+                        <li>
+                            <a href="#">Assinantes</a>
+                        </li>
+                        <li>
+                            <a href="#">Funcionários</a>
+                        </li>
+                        <li>
+                            <a href="#">Cobranças</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageConfig" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Configuração</a>
+                    <ul class="collapse list-unstyled" id="pageConfig">
+                        <li>
+                            <a href="../configuracao/usuarios.html">Usuários</a>
+                        </li>
+                        <li>
+                            <a href="../configuracao/usuarioParametro.html">Usuário Parâmetro</a>
+                        </li>
+                        <li>
+                            <a href="../configuracao/empresa.html">Empresa</a>
+                        </li>
+                        <li>
+                            <a href="../configuracao/cep.html">CEP</a>
+                        </li>
+                        <li>
+                            <a href="../configuracao/lacre.html">Lacre</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageConta" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Minha Conta</a>
+                    <ul class="collapse list-unstyled" id="pageConta">
+                        <li>
+                            <a href="../minhaconta/meusdados.html">Meus Dados</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="btnSair" class="btn btn-danger">Sair</button>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+
+                    <button idtype="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="material-icons"></i>
+                        <span><img id="logoMenu" src="../imagens/menu.png" alt=""></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active ">
+                                <p id="nomeUsuario">Seja Bem vindo <strong>Jefferson<strong></p>
+                                <li class="nav-item active ">
+                                    <select class="form-control">
+                                        <option value="9">TVANET TELECOM - SERRINHA</option>
+                                        <option value="4">TVANET TELECOM - ANDARAÍ</option>
+                                    </select>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id='alert'>
+                <div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Erro de cadastrado</strong>
+                                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                    </button>
+                    </div>
+                </div>
+                <div class="container">
+                    <div id="topoConteudo">
+                        <div id="lblNovoAssinante">
+                            <h4 id="tituloNovoAssinante">Novo Assinante</h4>
+                        </div>
+                        <div id="contrato">
+                            <div class="form-group row">
+                                <label id="lblContrato" for="txtContrato" class="col-sm-2 col-form-label">Contrato</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="txtContrato">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="frmCadNovoAssinante">
+                        <div id="frmNovoAssinante">
+                            <label id="protocolo" style="font-size: 12pt;">Protocolo de Serviço: <strong style="color: rgb(15, 37, 133);">20091603000001000001</strong></label>
+                            <hr>
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-dados-tab" data-toggle="tab" href="#nav-dados" role="tab" aria-controls="nav-dados" aria-selected="true">
+                                        <label style="font-weight: bold;">Dados Pessoais</label>
+                                    </a>
+                                    <a class="nav-item nav-link" id="nav-contato-tab" data-toggle="tab" href="#nav-contato" role="tab" aria-controls="nav-contato" aria-selected="false">
+                                        <label style="font-weight: bold;">Contato</label>
+                                    </a>
+                                    <a class="nav-item nav-link" id="nav-endereco-tab" data-toggle="tab" href="#nav-endereco" role="tab" aria-controls="nav-endereco" aria-selected="false">
+                                        <label style="font-weight: bold;">Endereço</label>
+                                    </a>
+                                    <a class="nav-item nav-link" id="nav-servico-tab" data-toggle="tab" href="#nav-servico" role="tab" aria-controls="nav-servico" aria-selected="false">
+                                        <label style="font-weight: bold;">Serviço</label>
+                                    </a>
+                                    <a class="nav-item nav-link" id="nav-equipamento-tab" data-toggle="tab" href="#nav-equipamento" role="tab" aria-controls="nav-equipamento" aria-selected="false">
+                                        <label style="font-weight: bold;">Equipamento</label>
+                                    </a>
+                                    <a class="nav-item nav-link" id="nav-rede-tab" data-toggle="tab" href="#nav-rede" role="tab" aria-controls="nav-rede" aria-selected="false">
+                                        <label style="font-weight: bold;">Rede</label>
+                                    </a>
+                                    <a class="nav-item nav-link" id="nav-financeiro-tab" data-toggle="tab" href="#nav-financeiro" role="tab" aria-controls="nav-financeiro" aria-selected="false">
+                                        <label style="font-weight: bold;">Financeiro</label>
+                                    </a>
+                                    <a class="nav-item nav-link" id="nav-equipe-tab" data-toggle="tab" href="#nav-equipe" role="tab" aria-controls="nav-equipe" aria-selected="false">
+                                        <label style="font-weight: bold;">Parâmetros</label>
+                                    </a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-dados" role="tabpanel" aria-labelledby="nav-dados-tab">
+                                    <br>
+                                    <div class="row">
+                                        <div id="nome" class="col-md-8 col-xs-8">
+                                            <div class="form-group">
+                                                <label for="txtNome">Nome / Razão Social *</label>
+                                                <input id="txtNome" name="txtNome" type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div id="pessoa" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtPessoa">Tipo de Pessoa</label>
+                                                <select name="txtPessoa" id="txtPessoa" class="form-control">
+                                                    <option value="1">Pessoa Física</option>
+                                                    <option value="2">Pessoa Jurídica</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="cpf" class="col-md-5 col-xs-5">
+                                            <div class="form-group">
+                                                <label for="txtCpf">CPF / CNPJ</label>
+                                                <input id="txtCpf" name="txtCpf" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div id="dataNascimento" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtNascimento">Data de Nascimento</label>
+                                                <input id="txtNascimento" name="txtNascimento" type="date" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div id="rg" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtRg">RG / Inscrição Estudual</label>
+                                                <input id="txtRg" name="txtRg" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-contato" role="tabpanel" aria-labelledby="nav-contato-tab">
+                                    <br>
+                                    <div class="row">
+                                        <div id="tel1" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtTel1">Telefone Fixo 1</label>
+                                                <input id="txtTel1" name="txtTel1" type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div id="tel2" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtTel2">Telefone Fixo 2</label>
+                                                <input id="txtTel2" name="txtTel2" type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div id="cel1" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtCel1">Celular 1</label>
+                                                <input id="txtCel1" name="txtCel1" type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="cel2" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtCel2">Celular 2</label>
+                                                <input id="txtCel2" name="txtCel2" type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div id="email" class="col-md-8 col-xs-8">
+                                            <div class="form-group">
+                                                <label for="txtEmail">Email</label>
+                                                <input id="txtEmail" name="txtEmail" type="email" class="form-control" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-endereco" role="tabpanel" aria-labelledby="nav-endereco-tab">
+                                    <br>
+                                    <div class="row">
+                                        <div id="cep" class="col-md-2 col-xs-2">
+                                            <div class="form-group">
+                                                <label for="txtCep">CEP *</label>
+                                                <input id="txtCep" name="txtCep" type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div id="endereco" class="col-md-6 col-xs-6">
+                                            <div class="form-group">
+                                                <label for="txtEndereco">Endereço</label>
+                                                <input id="txtEndereco" name="txtEndereco" type="text" class="form-control" disabled>
+                                            </div>
+                                        </div>
+                                        <div id="bairro" class="col-md-4 col-xs-4">
+                                            <div class="form-group">
+                                                <label for="txtBairro">Bairro</label>
+                                                <input id="txtBairro" name="txtBairro" type="text" class="form-control" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="cidade" class="col-md-4 col-xs-4">
+                                            <div class="form-group">
+                                                <label for="txtCidade">Cidade</label>
+                                                <input id="txtCidade" name="txtCidade" type="text" class="form-control" disabled>
+                                            </div>
+                                        </div>
+                                        <div id="uf" class="col-md-1 col-xs-1">
+                                            <div class="form-group">
+                                                <label for="txtUf">UF</label>
+                                                <input id="txtUf" name="txtUf" type="text" class="form-control" disabled>
+                                            </div>
+                                        </div>
+                                        <div id="numero" class="col-md-2 col-xs-2">
+                                            <div class="form-group">
+                                                <label for="txtNumero">Número</label>
+                                                <input id="txtNumero" name="txtNumero" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div id="complemento" class="col-md-4 col-xs-4">
+                                            <div class="form-group">
+                                                <label for="txtComplemento">Complemento</label>
+                                                <input id="txtComplemento" name="txtComplemento" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="referencia" class="col-md-5 col-xs-5">
+                                            <div class="form-group">
+                                                <label for="txtReferencia">Referência</label>
+                                                <input id="txtReferencia" name="txtReferencia" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-servico" role="tabpanel" aria-labelledby="nav-servico-tab">
+                                    <br>
+                                    <div class="row">
+                                        <div id="plano" class="col-md-4 col-xs-4">
+                                            <div class="form-group">
+                                                <label for="cbPlano">Plano</label>
+                                                <select name="cbPlano" id="cbPlano" class="form-control">
+                                                    <option value="0">-----</option>
+                                                    <option value="1">5MB -  R$: 59,90</option>
+                                                    <option value="2">10MB - R$: 79,90</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="tecTv" class="col-md-4 col-xs-4">
+                                            <div class="form-group">
+                                                <label for="cbTecTv">Tecnologia da TV</label>
+                                                <select name="cbTecTv" id="cbTecTv" class="form-control">
+                                                    <option value="1">Coaxial</option>
+                                                    <option value="2">GPON</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="pontosTv" class="col-md-2 col-xs-2">
+                                            <div class="form-group">
+                                                <label for="cbPontosTV">Pontos de TV</label>
+                                                <select class="form-control" id="cbPontosTV">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="lacre" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtLacre">Lacre</label>
+                                                <input id="txtLacre" name="txtLacre" class="form-control" type="text">
+                                                <small>* Área exclusiva para TV</small>
+                                            </div>
+                                        </div>
+                                        <div id="anilha" class="col-md-4 col-xs-4">
+                                            <div class="form-group">
+                                                <label for="txtAnilha">Anilha</label>
+                                                <input id="txtAnilha" name="txtAnilha" class="form-control" type="text">
+                                                <small>* Área exclusiva para Internet ou Combo</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-equipamento" role="tabpanel" aria-labelledby="nav-equipamento-tab">
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="checkOnuG" value="1" style="width: 55px; height: 20px;">
+                                                <label class="form-check-label" for="checkOnu" style="font-weight: bold;">ONU (GPON)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="checkOnuE" value="1" style="width: 55px; height: 20px;">
+                                                <label class="form-check-label" for="checkOnu" style="font-weight: bold;">ONU (EPON)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div id="fabricante" class="col-md-4 col-xs-4">
+                                            <div class="form-group">
+                                                <label for="cbFabricante">Fabricante</label>
+                                                <select name="cbFabricante" id="cbFabricante" class="form-control">
+                                                    <option value="0">------</option>
+                                                    <option value="1">TP-LINK</option>
+                                                    <option value="2">MULTILASER</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="modelo" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="cbModelo">Modelo</label>
+                                                <select name="cbModelo" id="cbModelo" class="form-control">
+                                                    <option value="0">------</option>
+                                                    <option value="1">8300WD</option>
+                                                    <option value="2">F500</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="serie" class="col-md-4 col-xs-4">
+                                            <div class="form-group">
+                                                <label for="cbSerie">Série</label>
+                                                <select name="cbSerie" id="cbSerie" class="form-control">
+                                                    <option value="0">------</option>
+                                                    <option value="1">fsdfsdfsdfsdf</option>
+                                                    <option value="2">w23r4322r3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="ckRoteador" value="1" style="width: 55px; height: 20px;">
+                                                <label class="form-check-label" for="ckRoteador" style="font-weight:lighter">Roteador</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div id="fabricanteRoteador" class="col-md-4 col-xs-4">
+                                            <div class="form-group">
+                                                <label for="cbFabricanteRoteador">Fabricante</label>
+                                                <select name="cbFabricanteRoteador" id="cbFabricanteRoteador" class="form-control">
+                                                    <option value="0">------</option>
+                                                    <option value="1">Multilaser</option>
+                                                    <option value="2">ZTE</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="modeloRoteador" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="cbModeloRoteador">Modelo</label>
+                                                <select name="cbModeloRoteador" id="cbModeloRoteador" class="form-control">
+                                                    <option value="0">------</option>
+                                                    <option value="1">Multilaser</option>
+                                                    <option value="2">ZTE</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="serieRoteador" class="col-md-4 col-xs-4">
+                                            <div class="form-group">
+                                                <label for="cbSerieRoteador">Série</label>
+                                                <select name="cbSerieRoteador" id="cbSerieRoteador" class="form-control">
+                                                    <option value="1">fsdfsdfsdfsdf</option>
+                                                    <option value="2">w23r4322r3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-financeiro" role="tabpanel" aria-labelledby="nav-financeiro-tab">
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-5 col-xs-5">
+                                            <div class="form-group">
+                                                <label for="cbBanco">Banco *</label>
+                                                <select name="cbBanco" id="cbBanco" class="form-control">
+                                                    <option value="0">------</option>
+                                                    <option value="1">Bradesco S/A</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="cbAgencia">Agência *</label>
+                                                <select name="cbAgencia" id="cbAgencia" class="form-control">
+                                                    <option value="0">------</option>
+                                                    <option value="1">3057</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="cbCc">Conta Corrente *</label>
+                                                <select name="cbCc" id="cbCc" class="form-control">
+                                                    <option value="0">------</option>
+                                                    <option value="1">521515</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="cbDiaVcto">Dia do Vencimento *</label>
+                                                <select name="cbDiaVcto" id="cbDiaVcto" class="form-control">
+                                                    <option value="0">------</option>
+                                                    <option value="5">5</option>
+                                                    <option value="10">10</option>
+                                                    <option value="15">15</option>
+                                                    <option value="20">20</option>
+                                                    <option value="25">25</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="cbCob">Tipo de Cobrança *</label>
+                                                <select name="cbCob" id="cbCob" class="form-control">
+                                                    <option value="0">------</option>
+                                                    <option value="1">Carteira</option>
+                                                    <option value="2">Bancária</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="cbPgto">Tipo de Pagamento *</label>
+                                                <select name="cbPgto" id="cbPgto" class="form-control">
+                                                    <option value="0">------</option>
+                                                    <option value="1">Boleto</option>
+                                                    <option value="2">Carnê</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-rede" role="tabpanel" aria-labelledby="nav-rede-tab">
+                                    <br>
+                                    <div class="row">
+                                        <div id="habilitarRede" class="col-md-5 col-xs-5">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="ckRede" value="1" style="width: 55px; height: 20px;">
+                                                <label class="form-check-label" for="ckRede" style="font-weight:lighter">Habilitar Rede</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div id="pppoe" class="col-md-5 col-xs-5">
+                                            <div class="form-group">
+                                                <label for="txtPppoe">PPPoE *</label>
+                                                <input id="txtPppoe" name="txtPppoe" type="text" class="form-control">
+                                                <small>Ex.: 89456@12345 (5 dígitos CPF ou CNPJ + @ + Contrato)</small>
+                                            </div>
+                                        </div>
+                                        <div id="senha" class="col-md-5 col-xs-5">
+                                            <div class="form-group">
+                                                <label for="txtSenha">Senha *</label>
+                                                <input id="txtSenha" name="txtSenha" type="password" class="form-control">
+                                                <small>Ex.: 123456</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div id="habilitarIp" class="col-md-5 col-xs-5">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="ckIp" value="1" style="width: 55px; height: 20px;">
+                                                <label class="form-check-label" for="ckIp" style="font-weight:lighter">Habilitar IP</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div id="ip" class="col-md-5 col-xs-5">
+                                            <div class="form-group">
+                                                <label for="txtIp">IP *</label>
+                                                <input id="txtIp" name="txtIp" type="text" class="form-control">
+                                                <small>Ex.: 192.168.66.1</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-equipe" role="tabpanel" aria-labelledby="nav-equipe-tab">
+                                    <br>
+                                    <div class="row">
+                                        <div id="tecnico" class="col-md-5 col-xs-5">
+                                            <div class="form-group">
+                                                <label for="cbFuncionario">Técnico da área</label>
+                                                <select name="cbFuncionario" id="cbFuncionario" class="form-control">
+                                                    <option value="0">-------</option>
+                                                    <option value="1">PALICIANO</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="turno" class="col-md-2 col-xs-2">
+                                            <div class="form-group">
+                                                <label for="cbTurno">Turno</label>
+                                                <select name="cbTurno" id="cbTurno" class="form-control">
+                                                    <option value="0">-------</option>
+                                                    <option value="1">MANHÃ</option>
+                                                    <option value="1">TARDE</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="dataInstalacao" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtDataInstalacao">Data de Agendamento</label>
+                                                <input id="txtDataInstalacao" name="txtDataInstalacao" type="date" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="horaInstalacao" class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <label for="txtHoraInstalacao">Hora de Agendamento</label>
+                                                <input id="txtHoraInstalacao" name="txtHoraInstalacao" type="time" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="obs" class="col-md-8 col-xs-8">
+                                            <div class="form-group">
+                                                <label for="txtObs">Observação</label>
+                                                <textarea class="form-control" id="txtObs" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="botoes">
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <button id="btnSalvar" type="submit" class=" form-control btn btn-success"><i class='fas fa-check-square'></i>&nbsp;&nbsp;&nbsp;Salvar</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <button id="btnCancelar" type="submit" class="form-control btn btn-danger"><i class='fas fa-window-close'></i>&nbsp;&nbsp;&nbsp;Cancelar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    $("#txtCnpj").mask("99.999.999/9999-99");
+                    $("#txtCpf").mask("999.999.999-99");
+                    $("#txtCep").mask("99999-999");
+                    $("#txtTel1").mask("(99) 9999-9999");
+                    $("#txtCel1").mask("(99) 99999-9999");
+                </script>
+
+                <!-- jQuery CDN - Slim version (=without AJAX) -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <!-- Popper.JS -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+                <!-- Bootstrap JS -->
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+                <script type="text/javascript">
+                    $("#txtCep").mask("99999-999");
+                </script>
+
+                <script type="text/javascript ">
+                    $(document).ready(function() {
+                        $('#sidebarCollapse').on('click', function() {
+                            $('#sidebar').toggleClass('active');
+                        });
+                    });
+                </script>
+                <script>
+                    $(document).ready(function() {
+                        // convert selects already on the page at dom load
+                        $('select.form-control').combobox();
+
+                        $('#it').click(function(e) {
+                            $('ul.dropdown-menu').toggle();
+                        });
+
+                        //  $('input').focus(function(e){
+                        //    $('ul.dropdown-menu').toggle();
+                        //  });
+
+                    });
+                </script>
+</body>
+
+</html>

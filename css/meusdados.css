@@ -262,12 +262,14 @@ a.article:hover {
 #txtCodigo {
     font-weight: normal;
     font-size: 11pt;
+    background-color: rgb(224, 224, 224);
 }
 
 #txtNome {
     margin-left: -10px;
     font-weight: normal;
     font-size: 11pt;
+    background-color: rgb(224, 224, 224);
 }
 
 #txtApelido {

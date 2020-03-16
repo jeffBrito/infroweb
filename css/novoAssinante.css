@@ -216,7 +216,7 @@ a.article:hover {
     conteudo0
 */
 
-#frmCadPreAssinante {
+#frmCadNovoAssinante {
     width: 1030px;
     height: 670px;
     background-color: rgb(240, 240, 240);
@@ -227,7 +227,7 @@ a.article:hover {
     margin-top: 10px;
 }
 
-#frmPreAssinante {
+#frmNovoAssinante {
     width: 1008px;
     height: 640px;
     position: absolute;
@@ -236,17 +236,34 @@ a.article:hover {
 }
 
 #topoConteudo {
-    width: 1100px;
+    width: 1030px;
     height: 50px;
 }
 
-#tituloPreAssinante {
+#tituloNovoAssinante {
     float: left;
     margin-top: 10px;
 }
 
+
+/*dados*/
+
 #nav-dados {
     background-color: rgba(196, 196, 196, 0.253);
+}
+
+#contrato {
+    margin-top: 15px !important;
+    float: right;
+    height: 50px;
+}
+
+#lblContrato {
+    font-size: 11pt;
+}
+
+#txtContrato {
+    font-size: 11pt;
 }
 
 #txtNome {
@@ -263,6 +280,7 @@ a.article:hover {
 #txtCpf {
     font-weight: normal;
     font-size: 11pt;
+    height: 35px;
 }
 
 #txtNascimento {
@@ -270,6 +288,18 @@ a.article:hover {
     font-size: 11pt;
     height: 35px;
 }
+
+#txtRg {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+
+/*fim dados*/
+
+
+/* contato*/
 
 #nav-contato {
     background-color: rgba(196, 196, 196, 0.253);
@@ -299,11 +329,11 @@ a.article:hover {
     height: 35px;
 }
 
-#txtEmail {
-    font-weight: normal;
-    font-size: 11pt;
-    height: 35px;
-}
+
+/*fim contato*/
+
+
+/*endereco*/
 
 #nav-endereco {
     background-color: rgba(196, 196, 196, 0.253);
@@ -319,6 +349,11 @@ a.article:hover {
     font-weight: normal;
     font-size: 11pt;
     background-color: rgb(224, 224, 224);
+    float: left;
+}
+
+#endereco {
+    margin-left: -15x;
 }
 
 #txtBairro {
@@ -328,11 +363,19 @@ a.article:hover {
     background-color: rgb(224, 224, 224);
 }
 
+#bairro {
+    margin-left: -15x;
+}
+
 #txtCidade {
     font-weight: normal;
     font-size: 11pt;
     height: 35px;
     background-color: rgb(224, 224, 224);
+}
+
+#cidade {
+    margin-left: -15x;
 }
 
 #txtUf {
@@ -342,10 +385,18 @@ a.article:hover {
     background-color: rgb(224, 224, 224);
 }
 
+#uf {
+    margin-left: -15x;
+}
+
 #txtNumero {
     font-weight: normal;
     font-size: 11pt;
     height: 35px;
+}
+
+#numero {
+    margin-left: -15x;
 }
 
 #txtComplemento {
@@ -354,16 +405,240 @@ a.article:hover {
     height: 35px;
 }
 
+#complemento {
+    margin-left: -15x;
+}
+
 #txtReferencia {
     font-weight: normal;
     font-size: 11pt;
     height: 35px;
 }
 
+#referencia {
+    margin-left: -15x;
+}
+
+
+/*fim endereco*/
+
+
+/*servico*/
+
+#nav-servico {
+    background-color: rgba(196, 196, 196, 0.253);
+}
+
+#cbPlano {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#txtPreco {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+    background-color: rgb(224, 224, 224);
+}
+
+#preco {
+    margin-left: -15x;
+}
+
+#cbTecTv {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#tecTv {
+    margin-left: -15x;
+}
+
+#cbPontosTv {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#pontosTv {
+    margin-left: -15x;
+}
+
+#txtLacre {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#txtAnilha {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+
+/* fim servico*/
+
+
+/* inicio equipamento*/
+
+#nav-equipamento {
+    background-color: rgba(196, 196, 196, 0.253);
+}
+
+#cbFabricante {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#cbModelo {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#cbSerie {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#cbFabricanteRoteador {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#cbModeloRoteador {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#cbSerieRoteador {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+
+/*fim equipamento*/
+
+
+/*inicio financeiro*/
+
+#nav-financeiro {
+    background-color: rgba(196, 196, 196, 0.253);
+}
+
+#cbBanco {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#cbAgencia {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#cbCc {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#cbDiaVcto {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#cbCob {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#cbPgto {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+
+/*fim financeiro*/
+
+
+/*inicio rede*/
+
+#nav-rede {
+    background-color: rgba(196, 196, 196, 0.253);
+}
+
+#txtPppoe {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#txtSenha {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#txtIp {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+
+/*fim rede*/
+
 select {
     font-weight: normal;
     font-size: 11pt;
 }
+
+
+/*inicio equipe*/
+
+#nav-rede {
+    background-color: rgba(196, 196, 196, 0.253);
+}
+
+#cbFuncionario {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#cbTurno {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#txtDataInstalacao {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+#txtHoraInstalacao {
+    font-weight: normal;
+    font-size: 11pt;
+    height: 35px;
+}
+
+
+/*inicio equipe*/
 
 option {
     font-weight: normal;
